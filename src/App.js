@@ -102,6 +102,7 @@ useEffect(()=>{
              <td className='btn'><button className='delete-button' onClick={()=>Delete(row.id)}>delete</button></td>
             </tr>
           )})}
+          
       </table>
     </div>
   );
