@@ -1,38 +1,139 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,html{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.form-container{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(126, 126, 126);
+  border-radius: 8px;
+  height: 100%;
+  width: 500px;
+  margin: 15px 10px;
+  padding: 0px 0px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.form-tittle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 29px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: green;
+  height: 50px;
+}
+.label{
+  color: rgb(17, 0, 255);
+  font-size: 22px;
+  font-weight: 600;
+  margin: 5px 10px;
+}
+.input{
+  border: none;
+  font-size: 19px;
+  border-bottom: 1px solid blueviolet;
+  border-radius: 5px;
+  margin: 2px 10px;
+  height: 35px;
+  padding: 0 8px;
+}
+.submit{
+  font-size: 20px;
+  margin: 20px 30%;
+  color: rgb(255, 255, 255);
+  background-color: blue;
+  border: none;
+  border-radius: 6px;
+  height: 45px;
+  cursor: pointer;
+}
+.submit:hover{
+  font-size: 22px;
+  background-color: rgb(51, 51, 255);
+}
+.submit:active{
+  font-size: 22px;
+  background-color: rgb(255, 213, 213);
+  color: rgb(51, 51, 255);
+}
+.table{
+  border-collapse: collapse;
+  width: 850px;
+  height: 100%;
+  margin: 20px 0 35px 0px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.table-header{
+  font-size: 20px;
+  height: 44px;
   color: white;
+  background-color: green;
 }
-
-.App-link {
-  color: #61dafb;
+.table-value{
+  height: 38px;
+  font-size: 18px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table-data{
+  word-wrap: break-word;
+  padding: 7px;
+  border-right: 1px solid rgb(122, 122, 122);
+  border-bottom: 1px solid rgb(122, 122, 122);
+}
+.table-tittle{
+  border-right: 1px solid rgb(175, 175, 175);
+  margin: 0px 10px;
+  padding: 0px 10px;
+}
+.btn{
+  border-bottom: 1px solid rgb(122, 122, 122);
+}
+.edit-button{
+  color: white;
+  background: rgb(255, 91, 31);
+  width: 88% ;
+  height: 80%;
+  border-radius: 5px;
+  margin: 2px 9px;
+  cursor: pointer;
+}
+.delete-button{
+  color: white;
+  background: rgb(255, 0, 0);
+  width: 89% ;
+  height: 80%;
+  border-radius: 5px;
+  margin: 2px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px){
+ .container{
+  margin-left:45px ;
+  width: 100%;
+  height: 100%;
+ }
+ .form-container{
+  display: flex;
+  border: 1px solid red;
+  width: 100%;
+ }
+ .table{
+  width: 100%;
+ }
 }
